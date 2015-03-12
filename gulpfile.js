@@ -156,5 +156,5 @@ gulp.task('default', ['build', 'server:start'], function() {
   gulp.watch(['./client/**/*.*', '!./client/templates/**/*.*', '!./client/assets/{scss,js}/**/*.*'], ['copy']);
 
   // Watch app templates
-  gulp.watch(['./client/templates/**/*.html'], ['copy-templates']);
+  gulp.watch(['./client/templates/**/*.html'], ['copy:templates']);
 });
